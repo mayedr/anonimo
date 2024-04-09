@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preguntas Anónimas</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Preguntas Anónimas</h1>
+        <div id="login" class="form-container">
+            <h2>Iniciar Sesión</h2>
+            <input type="text" id="usernameInput" placeholder="Nombre de Usuario">
+            <button onclick="login()">Ingresar</button>
+        </div>
+        <div id="shareLink" class="form-container hidden">
+            <h2>Enlace para Compartir</h2>
+            <input type="text" id="shareLinkInput" readonly>
+            <button onclick="copyLink()">Copiar Enlace</button>
+        </div>
+        <div id="questions" class="form-container hidden">
+            <h2>Preguntas Anónimas</h2>
+            <textarea id="questionInput" placeholder="Escribe tu pregunta"></textarea>
+            <button onclick="submitQuestion()">Enviar Pregunta</button>
+            <ul id="questionList"></ul>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
